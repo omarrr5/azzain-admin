@@ -1,7 +1,7 @@
 import BarChartBox from "../../components/barChartBox/BarChartBox";
 import BigChartBox from "../../components/bigChartBox/BigChartBox";
 import ChartBox from "../../components/chartBox/ChartBox";
-// import PieChartBox from "../../components/pieCartBox/PieChartBox";
+import PieChartBox from "../../components/pieCartBox/PieChartBox";
 import TopBox from "../../components/topBox/TopBox";
 import {
   barChartBoxRevenue,
@@ -25,7 +25,9 @@ function Home() {
       <div className="box box3">
         <ChartBox {...chartBoxRevenue} />
       </div>
-      <div className="box box4"></div>
+      <div className="box box4">
+        <PieChartBox />
+      </div>
       <div className="box box5"></div>
       <div className="box box6"></div>
       <div className="box box7">
