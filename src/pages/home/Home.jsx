@@ -28,8 +28,9 @@ function Home() {
       <div className="box box4">
         <PieChartBox />
       </div>
-      <div className="box box5"></div>
-      <div className="box box6"></div>
+      <div className="box box5">
+        <ChartBox {...chartBoxConversion} />
+      </div>
       <div className="box box7">
         <BigChartBox />
       </div>
