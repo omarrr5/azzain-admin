@@ -225,37 +225,37 @@ export const menu = [
   };
   
   export const barChartBoxVisit = {
-    title: "Total Visit",
+    title: "Total Visits",
     color: "#FF8042",
-    dataKey: "visit",
+    dataKey: "visits",
     chartData: [
       {
         name: "Sun",
-        visit: 4000,
+        visits: 4000,
       },
       {
         name: "Mon",
-        visit: 3000,
+        visits: 3000,
       },
       {
         name: "Tue",
-        visit: 2000,
+        visits: 2000,
       },
       {
         name: "Wed",
-        visit: 2780,
+        visits: 2780,
       },
       {
         name: "Thu",
-        visit: 1890,
+        visits: 1890,
       },
       {
         name: "Fri",
-        visit: 2390,
+        visits: 2390,
       },
       {
         name: "Sat",
-        visit: 3490,
+        visits: 3490,
       },
     ],
   };
