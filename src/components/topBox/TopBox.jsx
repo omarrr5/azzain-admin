@@ -15,7 +15,7 @@ const TopBox = () => {
                 <span className="method">{user.method}</span>
               </div>
             </div>
-            <span className="amount">RM {user.amount}</span>
+            <span className="amount">RM{user.amount}</span>
           </div>
         ))}
       </div>
