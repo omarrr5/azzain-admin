@@ -22,7 +22,9 @@ function Home() {
       <div className="box box2">
         <ChartBox {...chartBoxUser} />
       </div>
-      <div className="box box3"></div>
+      <div className="box box3">
+        <ChartBox {...chartBoxRevenue} />
+      </div>
       <div className="box box4"></div>
       <div className="box box5"></div>
       <div className="box box6"></div>

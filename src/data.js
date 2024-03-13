@@ -123,16 +123,16 @@ export const menu = [
     icon: "/userIcon.svg",
     title: "Total Printed Docs",
     number: "110",
-    dataKey: "users",
+    dataKey: "papers",
     percentage: 45,
     chartData: [
-      { name: "Sun", users: 400 },
-      { name: "Mon", users: 600 },
-      { name: "Tue", users: 500 },
-      { name: "Wed", users: 700 },
-      { name: "Thu", users: 400 },
-      { name: "Fri", users: 500 },
-      { name: "Sat", users: 450 },
+      { name: "Sun", papers: 4 },
+      { name: "Mon", papers: 30 },
+      { name: "Tue", papers: 20 },
+      { name: "Wed", papers: 10 },
+      { name: "Thu", papers: 5 },
+      { name: "Fri", papers: 5 },
+      { name: "Sat", papers: 10 },
     ],
   };
   
@@ -157,7 +157,7 @@ export const menu = [
     color: "teal",
     icon: "/revenueIcon.svg",
     title: "Total Revenue",
-    number: "$56.432",
+    number: "RM 56.432",
     dataKey: "revenue",
     percentage: -12,
     chartData: [
