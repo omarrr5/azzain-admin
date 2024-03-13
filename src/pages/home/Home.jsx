@@ -36,7 +36,9 @@ function Home() {
       <div className="box box8">
        <BarChartBox {...barChartBoxVisit} />
       </div>
-      <div className="box box9"></div>
+      <div className="box box9">
+        <BarChartBox {...barChartBoxRevenue} />
+      </div>
     </div>
   )
 }
