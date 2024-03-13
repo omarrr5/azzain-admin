@@ -23,11 +23,11 @@
     align-items: center;
     gap: 20px;
 
-    // .icon{
-    //   @include sm{
-    //     display: none;
-    //   }
-    // }
+    .icon{
+      @include sm{
+        display: none;
+      }
+    }
 
     .notification {
       position: relative;
