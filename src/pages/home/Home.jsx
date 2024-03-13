@@ -1,5 +1,5 @@
 import BarChartBox from "../../components/barChartBox/BarChartBox";
-// import BigChartBox from "../../components/bigChartBox/BigChartBox";
+import BigChartBox from "../../components/bigChartBox/BigChartBox";
 import ChartBox from "../../components/chartBox/ChartBox";
 // import PieChartBox from "../../components/pieCartBox/PieChartBox";
 import TopBox from "../../components/topBox/TopBox";
@@ -28,7 +28,9 @@ function Home() {
       <div className="box box4"></div>
       <div className="box box5"></div>
       <div className="box box6"></div>
-      <div className="box box7"></div>
+      <div className="box box7">
+        <BigChartBox />
+      </div>
       <div className="box box8">
        <BarChartBox {...barChartBoxVisit} />
       </div>

@@ -11,45 +11,38 @@ import "./bigChartBox.scss";
 const data = [
   {
     name: "Sun",
-    books: 4000,
-    clothes: 2400,
-    electronic: 2400,
+    bw: 4000,
+    color: 2400,
   },
   {
     name: "Mon",
-    books: 3000,
-    clothes: 1398,
-    electronic: 2210,
+    bw: 3000,
+    color: 1398,
   },
   {
     name: "Tue",
-    books: 2000,
-    clothes: 9800,
-    electronic: 2290,
+    bw: 2000,
+    color: 9800,
   },
   {
     name: "Wed",
-    books: 2780,
-    clothes: 3908,
-    electronic: 2000,
+    bw: 2780,
+    color: 3908,
   },
   {
     name: "Thu",
-    books: 1890,
-    clothes: 4800,
-    electronic: 2181,
+    bw: 1890,
+    color: 4800,
   },
   {
     name: "Fri",
-    books: 2390,
-    clothes: 3800,
-    electronic: 2500,
+    bw: 2390,
+    color: 3800,
   },
   {
     name: "Sat",
-    books: 3490,
-    clothes: 4300,
-    electronic: 2100,
+    bw: 3490,
+    color: 4300,
   },
 ];
 
@@ -73,24 +66,17 @@ const BigChartBox = () => {
             <Tooltip />
             <Area
               type="monotone"
-              dataKey="electronic"
+              dataKey="bw"
               stackId="1"
               stroke="#8884d8"
               fill="#8884d8"
             />
             <Area
               type="monotone"
-              dataKey="clothes"
+              dataKey="color"
               stackId="1"
               stroke="#82ca9d"
               fill="#82ca9d"
-            />
-            <Area
-              type="monotone"
-              dataKey="books"
-              stackId="1"
-              stroke="#ffc658"
-              fill="#ffc658"
             />
           </AreaChart>
         </ResponsiveContainer>
