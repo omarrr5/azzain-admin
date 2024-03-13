@@ -1,10 +1,64 @@
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import Home from "./pages/home/Home";
+import Orders from "./pages/orders/Orders";
+import Printers from "./pages/printers/Printers";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
+import Menu from "./components/menu/Menu";
+import Login from "./pages/login/Login";
+import "./styles/global.scss";
 
 function App() {
-  return (
-    <div className="App">
-      hello
-    </div>
-  );
+
+  const Layout = ()=> {
+    return (
+      <div className="main">
+        <Navbar/>
+        <div className="container">
+          <div className="menuContainer">
+            <Menu/>
+          </div>
+          <div className="contentContainer">
+            <Outlet/>
+          </div>
+          <div>
+            <Footer/>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout/>,
+      children:[
+        {
+          path: "/",
+          element: <Home/>
+        },
+        {
+          path: "/orders",
+          element: <Orders/>
+        },
+        {
+          path: "/printers",
+          element: <Printers/>
+        }
+      ]
+    },
+    {
+      path: "/login",
+      element: <Login/>
+    }
+  ]);
+
+  return <RouterProvider router={router} />;  
+
 }
+
+
+
 
 export default App;
