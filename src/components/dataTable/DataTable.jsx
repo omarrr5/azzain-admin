@@ -16,6 +16,12 @@ const columns = [
     width: 200
   },
   {
+    field: 'location',
+    headerName: 'Location',
+    width: 100
+  }
+  ,
+  {
     field: 'createdAt',
     headerName: 'Created At',
     width: 200
@@ -43,8 +49,8 @@ const columns = [
 ];
 
 const rows = [
-  { id: 1, name: 'PIXMA G4770', assocUser: 'omarrr5', createdAt: '2024-03-08 14:20:22', status: 'yes' },
-  { id: 2, name: 'HP Smart Tank 750 All-in-One Printer', assocUser: 'admin', createdAt: '2024-03-08 14:20:22', status: 'No' }
+  { id: 1, name: 'PIXMA G4770', assocUser: 'omarrr5', location: 'Cyberjaya' , createdAt: '2024-03-08 14:20:22', status: 'yes' },
+  { id: 2, name: 'HP Smart Tank 750 All-in-One Printer', assocUser: 'admin', location: 'Melaka' , createdAt: '2024-03-08 14:20:22', status: 'No' }
 ];
 
 const handleDelete = (id) => {
