@@ -7,7 +7,6 @@ import {
   barChartBoxRevenue,
   barChartBoxVisit,
   chartBoxConversion,
-  chartBoxProduct,
   chartBoxRevenue,
   chartBoxUser,
 } from "../../data";
