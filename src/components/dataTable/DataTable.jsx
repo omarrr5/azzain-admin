@@ -19,8 +19,7 @@ const columns = [
     field: 'location',
     headerName: 'Location',
     width: 100
-  }
-  ,
+  },
   {
     field: 'createdAt',
     headerName: 'Created At',
