@@ -1,42 +1,21 @@
 import React from 'react';
-import { Box, Chip } from '@mui/material';
+import { Box } from '@mui/material';
 import { DataGrid, GridToolbar } from '@mui/x-data-grid';
-import './datatable.scss';
+import '../dataTable/datatable.scss';
 
 const columns = [
   { field: 'id', headerName: 'ID', width: 90 },
   {
     field: 'name',
-    headerName: 'Printer Name',
+    headerName: 'Product Name',
     width: 300,
   },
   {
-    field: 'assocUser',
-    headerName: 'Associated User Name',
-    width: 200
-  },
-  {
-    field: 'location',
-    headerName: 'Location',
+    field: 'price',
+    headerName: 'Price',
     width: 100
   }
   ,
-  {
-    field: 'createdAt',
-    headerName: 'Created At',
-    width: 200
-  },
-  {
-    field: 'status',
-    headerName: 'Status',
-    width: 100,
-    renderCell: (params) => (
-      <Chip
-        label={params.value === 'yes' ? 'Active' : 'Inactive'}
-        style={{ backgroundColor: params.value === 'yes' ? '#4CAF50' : '#f44336', color: '#ffffff' }}
-      />
-    ),
-  },
   {
     field: 'action',
     headerName: 'Action',
@@ -49,8 +28,8 @@ const columns = [
 ];
 
 const rows = [
-  { id: 1, name: 'PIXMA G4770', assocUser: 'omarrr5', location: 'Cyberjaya' , createdAt: '2024-03-08 14:20:22', status: 'yes' },
-  { id: 2, name: 'HP Smart Tank 750 All-in-One Printer', assocUser: 'admin', location: 'Melaka' , createdAt: '2024-03-08 14:20:22', status: 'No' }
+  { id: 1, name: 'Black And White Page', price: '0.15' },
+  { id: 2, name: 'Coloured Page', price: '0.30'}
 ];
 
 const handleDelete = (id) => {
