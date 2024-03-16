@@ -8,6 +8,16 @@ const handleDelete = (id) => {
   // mutation.mutate(id)
 };
 
+const handleRefill = (id, papers) => {
+  const confirmed = window.confirm(`Are you sure you want to refill paper count for ID ${id}?`);
+
+  if (confirmed) {
+    // perform refill operation
+    // mutation.mutate(id);
+    console.log(`Refilling paper count for ID ${id}`);
+  }
+};
+
 const columns = [
   { field: 'id', headerName: 'ID', width: 90 },
   {
@@ -32,7 +42,13 @@ const columns = [
     renderCell: (params) => (
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <div>{params.value}</div>
-        <Button variant="contained" color="primary" size="small" style={{ marginLeft: '15px' }}>
+        <Button 
+        variant="contained" 
+        color="primary"
+         size="small" 
+         style={{ marginLeft: '15px' }}
+         onClick={() => handleRefill(params.row.id, params.row.papers)}
+         >
           Refill
         </Button>
       </div>
