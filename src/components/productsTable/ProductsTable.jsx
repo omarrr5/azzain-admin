@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { Box } from '@mui/material';
 import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 import '../dataTable/datatable.scss';
@@ -20,9 +21,16 @@ const columns = [
     field: 'action',
     headerName: 'Action',
     renderCell: (params) => (
+      <div className="action">
+        <img
+          src="/view.svg"
+          alt=""
+          style={{ cursor: 'pointer' }}
+        />
       <div className="delete" onClick={() => handleDelete(params.row.id)}>
         <img src="/delete.svg" alt="" />
       </div>
+    </div>
     ),
   }
 ];
