@@ -45,7 +45,7 @@ const handleDelete = (id) => {
   // mutation.mutate(id)
 };
 
-function DataTable() {
+function ProductsDataTable() {
   return (
     <div className='dataTable'>
       <Box sx={{ height: 800, width: '100%' }}>
@@ -71,4 +71,4 @@ function DataTable() {
   );
 }
 
-export default DataTable;
+export default ProductsDataTable;

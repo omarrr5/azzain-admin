@@ -86,7 +86,7 @@ const rows = [
   { id: 2, name: 'HP Smart Tank 750 All-in-One Printer', assocUser: 'admin', location: 'Melaka', papers: '400' , createdAt: '2024-03-08 14:20:22', status: 'No' }
 ];
 
-function DataTable() {
+function PrinterDataTable() {
   return (
     <div className='dataTable'>
       <Box sx={{ height: 800, width: '100%' }}>
@@ -112,4 +112,4 @@ function DataTable() {
   );
 }
 
-export default DataTable;
+export default PrinterDataTable;

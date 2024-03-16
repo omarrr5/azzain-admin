@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './Products.scss';
-import ProductsTable from "../../components/productsTable/ProductsTable";
+import ProductsDataTable from '../../components/dataTable/ProductsDataTable';
 import Add from "../../components/add/Add";
 
 const columns = [
@@ -28,7 +28,7 @@ function Products() {
       <h1>Products</h1>
       <button onClick={() => setOpen(true)}>Add New</button>
       </div>
-      <ProductsTable/>
+      <ProductsDataTable/>
       {open && <Add slug="product" columns={columns} setOpen={setOpen} />}
     </div>
   )
