@@ -17,17 +17,23 @@ function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Azzain Ink
-      </Link>{' '}
+      Azzain Ink {''} 
       {new Date().getFullYear()}
       {'.'}
     </Typography>
   );
 }
 
-
-const defaultTheme = createTheme();
+const customTheme = createTheme({
+  palette: {
+    primary: {
+      main: '#1e1f26',
+    },
+    secondary: {
+      main: '#ff7675', 
+    },
+  },
+});
 
 export default function SignIn() {
   const handleSubmit = (event) => {
@@ -40,7 +46,7 @@ export default function SignIn() {
   };
 
   return (
-    <ThemeProvider theme={defaultTheme}>
+    <ThemeProvider theme={customTheme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box
@@ -51,7 +57,7 @@ export default function SignIn() {
             alignItems: 'center',
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+          <Avatar sx={{ m: 1, bgcolor: customTheme.palette.secondary.main }}>
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
@@ -77,10 +83,6 @@ export default function SignIn() {
               type="password"
               id="password"
               autoComplete="current-password"
-            />
-            <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
-              label="Remember me"
             />
             <Button
               type="submit"

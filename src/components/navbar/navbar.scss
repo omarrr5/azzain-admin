@@ -1,4 +1,6 @@
 @import "../../styles/responsive.scss";
+@import "../../styles/variables.scss";
+
 
 .navbar {
   width: 100%;
@@ -58,6 +60,74 @@
         height: 26px;
         border-radius: 50%;
         object-fit: cover;
+      }
+    }
+
+    .settings {
+      position: relative;
+      cursor: pointer;
+
+      .menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: black;
+        font-weight: bold;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px 0;
+        width: 120px;
+
+        ul {
+          list-style-type: none;
+          padding: 0;
+
+          li {
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+              background-color: #f0f0f0;
+            }
+          }
+        }
+
+        .item {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin-bottom: 20px;
+
+          .title {
+            font-size: 14px;
+            font-weight: bold;
+            color: $soft-color;
+            text-transform: uppercase;
+
+            @include lg{
+              display: none;
+            }
+          }
+
+          .listItem {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 5px;
+
+            &:hover {
+              background-color: $soft-bg;
+            }
+
+            .listItemTitle{
+              @include lg{
+                display: none;
+              }
+            }
+          }
+        }
       }
     }
   }
